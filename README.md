@@ -43,7 +43,7 @@ Script to upload the Iris dataset from iris.csv into the MongoDB database, using
 
 ## .env
 Environment variables, accessed through the dotenv library.
-The ATLAS_URI needs to be modified to include your own connection string (see #Do it yourself).
+The ATLAS_URI needs to be modified to include your own connection string (see [#Do it yourself](https://github.com/javierlopezrodriguez/mongodb-fastapi/tree/main#mongodb-atlas-cluster)).
 
 ## example.ipynb
 A notebook to exemplify the use of the REST API to Create, Read, Update and Delete from the MongoDB database.
