@@ -9,12 +9,14 @@ It is based on this tutorial (https://www.mongodb.com/languages/python/pymongo-t
 ## models.py
 Definition of the data models using Pydantic to handle the data validation and serialization for the MongoDB + FastAPI application.
 The models are defined to support the following non-tabular data:
-    "example": {
+```yaml
+    {
         "_id": "64c1d7c991e84e28c735a5c6",
         "sepal": {"length": 5.1, "width": 3.5},
         "petal": {"length": 1.4, "width": 0.2},
         "species": "Iris-setosa"
     }
+```
 It contains models for Sepal, Petal and Flower (for creation, where every field except for the ID is required), and for SepalUpdate, PetalUpdate and FlowerUpdate (where every field is optional).
 The serialization and validation of MongoDB's BSON ObjectId is handled by annotating it, to make it compatible with Pydantic, behaving like a string.
 (See https://stackoverflow.com/questions/76686267/what-is-the-new-way-to-declare-mongo-objectid-with-pydantic-v2-0)
