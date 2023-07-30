@@ -12,8 +12,14 @@ The models are defined to support the following non-tabular data:
 ```yaml
     {
         "_id": "64c1d7c991e84e28c735a5c6",
-        "sepal": {"length": 5.1, "width": 3.5},
-        "petal": {"length": 1.4, "width": 0.2},
+        "sepal": {
+            "length": 5.1,
+            "width": 3.5
+            },
+        "petal": {
+            "length": 1.4,
+            "width": 0.2
+            },
         "species": "Iris-setosa"
     }
 ```
