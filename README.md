@@ -42,14 +42,17 @@ A notebook to exemplify the use of the REST API to Create, Read, Update and Dele
 It contains examples of the basic CRUD opperations allowed by the Endpoints defined in routes.py.
 
 ## iris.csv
-[REFERENCIA DATASET]
+A very famous dataset, which contains 3 classes of 50 instances each, where each class refers to a type of iris plant.
+Available from UCI Machine Learning Repository (https://archive.ics.uci.edu/dataset/53/iris).
 
 # Do it yourself:
 ## Create the virtual environment:
+```
 python -m venv pymongo-fastapi
 source pymongo-fastapi/bin/activate
 python -m pip install 'fastapi[all]' 'pymongo[srv]' python-dotenv requests ipykernel
 python -m ipykernel install --user --name=pymongo-fastapi
+```
 
 ## MongoDB Atlas cluster:
 You can create a free account here: 
@@ -63,11 +66,16 @@ In Atlas, go to Data Services. On the left, click Databases. Find your Database 
 Your connection string will appear in the pop up window.
 
 ## Run the Rest API:
+```
 source pymongo-fastapi/bin/activate
 python -m uvicorn main:app --reload
+```
 
 ## Fill the database with the Iris dataset:
+```
+source pymongo-fastapi/bin/activate
 python upload.py
+```
 
 ## Run the examples in the Jupyter Notebook
 Connect to the pymongo-fastapi kernel, make sure you have uvicorn running so that your REST API is online, and run the notebook.
